@@ -1,6 +1,8 @@
 # Hello!
 ## My name is Eeshi.
 ***
+[Lab Report 1](https://euppalapati.github.io/cse15l-lab-reports/lab-report-week-0.html)
+***
 *These are some of my favorite foods:*
 * bagels
 * iced chai
