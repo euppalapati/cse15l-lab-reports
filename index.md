@@ -19,7 +19,7 @@
 > It's nice to meet you!
 This is `really cool`
 ```
-Goodbye!
+Bye!
 Hope to see you again soon!
 :)
 ```
