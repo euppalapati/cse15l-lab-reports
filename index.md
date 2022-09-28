@@ -15,7 +15,7 @@
 [Chai and bagel review account](https://instagram.com/chaiflavoredbagels/)
 
 ![Picture of aurelia aurita](moonjelly.png)
-***
+
 > It's nice to meet you!
 This is `really cool`
 ```
