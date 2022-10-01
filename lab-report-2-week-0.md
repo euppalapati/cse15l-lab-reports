@@ -27,6 +27,25 @@
 ***
 ## Moving Files With `scp`
 * To copy files from the client computer to the remote computer, we use a command called `scp`. On your personal computer, create a file called `WhereAmI.java` that has the following code:
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name");
+    System.out.println(System.getProperty("user.name");
+    System.out.println(System.getProperty("user.home");
+    System.out.println(System.getProperty("user.dir");
+  }
+}
+```
+* Compile and run the WhereAmI program on your personal computer using `javac` and `java` like in the image below.
+![whereami output on personal computer](personalwhereami.png)
+* Copy the file into the remote computer using the code below, replacing the 'zz' with your account ID.
+
+`scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/`
+
+* Type your password, then log in to ieng6 using ssh. When you type the command `ls`, you should see the WhereAmI.java file in the directory.
+* Compile and run the WhereAmI program on the remote computer using `javac` and `java`; the output should be similar to the one in the image below.
+![whereami output on remote computer](remotewhereami.png)
 ***
 ## Setting an SSH Key
 
