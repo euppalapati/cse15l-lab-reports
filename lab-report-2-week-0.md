@@ -48,6 +48,11 @@ class WhereAmI {
 ![whereami output on remote computer](remotewhereami.png)
 ***
 ## Setting an SSH Key
-
+* To make the SSH key, type the command `ssh-keygen` into the terminal. Press `enter` when you're asked to enter a file in which to save the key. You should get an output like the one in the image below.
+[ssh-keygen output](keygenoutput.png)
+* Log in to the remote computer (ieng6) and make a new directory using the command `mkdir .ssh`. Then, log out using `Ctrl-D`.
+* Type the command below into your personal computer terminal, using your account ID and path. You should get an output in the terminal similar to the one in the image below.
+`scp /{PATH}/id-rsa.pub cs15lfa22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+![authorizing keys output](mkdir.png)
 ***
 ## Optimizing Remote Running
