@@ -63,3 +63,4 @@ class WhereAmI {
 * To optimize the keystroke count to be under 10, you have to make sure to run commands to copy the WhereAmI file to the remote computer, log in to the remote computer, and compile and run the WhereAmI file before making changes to the file.
 * Once the local changes are made and we are ready to copy and run the edited file from the remote computer, use the `up` key to rerun commands.
 * To optimize this even more, we can combine commands into one line using a semicolon. An example is shown in the image below.
+[combined terminal command example](optimize.png)
