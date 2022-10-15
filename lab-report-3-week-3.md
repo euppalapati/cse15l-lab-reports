@@ -80,6 +80,7 @@ For the image above, the add method is called. The relevant argument is "add?". 
 ![search h](search-h.png)
 
 ![search hey](search-hey.png)
+
 For the images above, the search method is called. The relevant argument is "search?". The relevant fields are "s=" and the word to be looked up (in these cases, "h" and "hey"). We can see that when these values are changed, different words are printed on the screen when the page is reloaded. Since none of the words in the list contained "hey," no words were printed with this search query, while two words were printed with the "h" search query.
 
 ## Part 2
