@@ -155,6 +155,7 @@ Failure-inducing input:
 ```
 
 Symptom:
+
 ![failing test output](listtestmerge-fail.png)
 
 Bug:
