@@ -10,7 +10,8 @@
   
       public String handleRequest(URI url) {
         String returnString = "";
-    
+           
+        //prints all of the words in the list if no query is specified
         if(url.getPath().equals("/")) {
           for(int i = 0; i < strings.size(); i ++) {
             returnString += strings.get(i) + " ";
@@ -19,6 +20,7 @@
          return returnString;
         }
   
+        //prints all of the words in the list that contain the substring in the query
         else if(url.getPath().equals("/search")) {
           String returnString2 = "";
           ArrayList<String> queryStrings = new ArrayList<String>();
@@ -36,7 +38,8 @@
     
           return returnString2;
         }
-  
+    
+        //adds specified strings to the list
         else {
          System.out.println("Path: " + url.getPath());
     
@@ -71,11 +74,11 @@
 
 ![empty query](no-query.png)
 
-For the image above, no method is called. There are no relevant arguments. The relevant fields are the words already added, since they are displayed if no method is specified. If these values change, the new set of words will be printed on the screen when the page is reloaded.
+For the image above, no method is called. There are no relevant arguments. The relevant fields are the words already added to the list of strings, since they are displayed if no method is specified. If these values change, the new set of words will be printed on the screen when the page is reloaded.
 
 ![add hello](add-hello.png)
 
-For the image above, the add method is called. The relevant argument is "add?". The relevant fields are "s=" and the word to be added (in this case, "hello"). If this value is changed, a different word will be added to the list when the page is reloaded, but the text on the screen will stay the same.
+For the image above, the add method is called. The relevant argument is "add?". The relevant fields are "s=" and the word to be added (in this case, "hello"). If this value is changed, a different word will be added to the list of strings (that remembers and stores all of the previous arguments passed with the add query) when the page is reloaded, but the text on the screen will stay the same.
 
 ![search h](search-h.png)
 
